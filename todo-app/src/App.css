@@ -1,0 +1,16 @@
+
+.button {
+  border: 0;
+  box-shadow: none;
+  width: 35px;
+  background-color: transparent;
+}
+
+.button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.button__icon {
+  width: 100%;
+}

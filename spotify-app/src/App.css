@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("./assets//Nunito_Sans/NunitoSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Comfortaa-SemiBold";
+  src: url("./assets/Comfortaa/Comfortaa-SemiBold.ttf");
+}
+
+.hover-shadow {
+  transition: box-shadow 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.App-header {
+  font-family: "Comfortaa-SemiBold";
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.ArtistList {
+  column-count: 5;
+}
+
+.ArtistList .card {
+  margin-bottom: 1rem;
+}

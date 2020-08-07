@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Salmon",
+    "description": "Salmon /ˈsæmən/ is the common name for several species of ray-finned fish in the family Salmonidae. Other fish in the same family include trout, char, grayling and whitefish. Salmon are native to tributaries of the North Atlantic (genus Salmo) and Pacific Ocean (genus Oncorhynchus). Many species of salmon have been introduced into non-native environments such as the Great Lakes of North America and Patagonia in South America. Salmon are intensively farmed in many parts of the world",
+    "imageURL": "https://ifoodreal.com/wp-content/uploads/2017/05/FG-thai-salmon.jpg",
+    "ingredients": [{ "name": "Salmon", "quantity": 2 }]
+  },
+  {
+    "name": "Ramen",
+    "description": "Ramen (/ˈrɑːmən/) (拉麺, ラーメン, rāmen, IPA: [ɾaꜜːmeɴ]) is a Japanese noodle soup. It consists of Chinese wheat noodles served in a meat or (occasionally) fish-based broth, often flavored with soy sauce or miso, and uses toppings such as sliced pork (叉焼, chāshū), nori (dried seaweed), menma, and scallions.",
+    "imageURL": "https://www.seriouseats.com/images/2013/09/20130910-crispy-pork-miso-ramen-03-2.jpg",
+    "ingredients": [
+      { "name": "Ramen", "quantity": 1 },
+      {
+        "name": "Egg",
+        "quantity": 1
+      },
+      {
+        "name": "Meat",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "name": "Egg Roll",
+    "description": "Egg rolls are a variety of deep-fried appetizers served in American Chinese restaurants. An egg roll is a cylindrical, savory roll with shredded cabbage, chopped pork, and other fillings inside a thickly-wrapped wheat flour skin, which is fried in hot oil.",
+    "imageURL": "https://images.media-allrecipes.com/userphotos/6406632.jpg",
+    "ingredients": [
+      { "name": "Egg", "quantity": 2 },
+      {
+        "name": "Onient",
+        "quantity": 1
+      }
+    ]
+  }
+]
