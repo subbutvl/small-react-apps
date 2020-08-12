@@ -1,8 +1,5 @@
 1. Basic todo app (with redux, react-redux): 
-
-   [Todo]: truculent-dock.surge.sh
-
-   
-
+   [Demo](truculent-dock.surge.sh)
+   ![image-20200812135441004](./screenshots/todo-app.png)
 2. 
 
