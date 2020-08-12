@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useState, FormEvent } from "react";
 import Button from "../button/Button.component";
+import PropTypes from "prop-types";
 
 interface TextInputProps {
-  handleSubmit: React.FormEventHandler<HTMLFormElement>;
-  handleChange: React.FormEventHandler<HTMLInputElement>;
-  currentTaskName: string;
+  onSubmit: (value: string) => void;
 }
 
-export default function TextInput(props: TextInputProps) {
-  const { handleSubmit, handleChange, currentTaskName } = props;
+const TextInput = ({ onSubmit }: TextInputProps) => {
+  const [value, setValue] = useState("");
+  const handleChange = (e: FormEvent<HTMLInputElement>) => {
+    setValue(e.currentTarget.value);
+  };
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault();
+    setValue("");
+    onSubmit(value);
+  };
+
   return (
     <form onSubmit={handleSubmit} className='w-50'>
       <div className='form-group d-flex align-items-center'>
@@ -19,7 +27,7 @@ export default function TextInput(props: TextInputProps) {
           className='form-control mr-3'
           placeholder='Enter task name here..'
           aria-describedby='helpId'
-          value={currentTaskName}
+          value={value}
           onChange={handleChange}
           autoComplete='off'
         />
@@ -29,4 +37,8 @@ export default function TextInput(props: TextInputProps) {
       </div>
     </form>
   );
-}
+};
+
+// TextInput.propTypes = { onSubmit: PropTypes.func.isRequired };
+
+export default TextInput;

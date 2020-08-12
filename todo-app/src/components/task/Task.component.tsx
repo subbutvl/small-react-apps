@@ -3,25 +3,26 @@ import Button from "../button/Button.component";
 
 interface TaskProps {
   name: string;
-  removeTask: React.MouseEventHandler<HTMLElement>;
-  markTaskComplete: React.MouseEventHandler<HTMLElement>;
+  onTaskRemove: () => void;
+  onTaskClick: React.MouseEventHandler<HTMLElement>;
   isCompleted: boolean;
 }
 
-export default function Task(props: TaskProps) {
-  const { name, removeTask, markTaskComplete, isCompleted } = props;
+const Task = ({ name, onTaskRemove, onTaskClick, isCompleted }: TaskProps) => {
   return (
     <div
       className={`alert d-flex justify-content-between align-items-center p-2 mt-3 user-select-none ${
         isCompleted ? "alert-success" : "alert-primary"
       } `}
       role='alert'
-      onClick={markTaskComplete}
+      onClick={onTaskClick}
     >
       {name} {isCompleted && "(Completed \u2713)"}
       <div className='remove-task'>
-        <Button type='remove' handleClick={removeTask} />
+        <Button type='remove' onClick={onTaskRemove} />
       </div>
     </div>
   );
-}
+};
+
+export default Task;

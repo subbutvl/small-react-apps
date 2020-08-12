@@ -1,15 +1,17 @@
-import React, { MouseEventHandler } from "react";
+import React, { MouseEventHandler, ReactEventHandler } from "react";
 import addIcon from "../../assets/add-svgrepo-com.svg";
 import removeIcon from "../../assets/cross-svgrepo-com.svg";
 
 interface ButtonProps {
   type: string;
-  handleClick?: MouseEventHandler<HTMLButtonElement>;
+  onClick?: () => void;
 }
 
-export default function Button(props: ButtonProps) {
-  const { type, handleClick } = props;
-
+export default function Button({ type, onClick }: ButtonProps) {
+  const handleClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    onClick && onClick();
+  };
   return type === "add" ? (
     <button className='button rounded-circle p-0' type='submit'>
       <img className='button__icon' src={addIcon} alt='Add task' />
