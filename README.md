@@ -1,5 +1,5 @@
 1. Basic todo app (with redux, react-redux): 
    [Demo](truculent-dock.surge.sh)
-   ![image-20200812135441004](./screenshots/todo-app.png)
+   ![](./screenshots/todo-app.png){height=400px width=500px}
 2. 
 
